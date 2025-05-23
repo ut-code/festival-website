@@ -26,7 +26,7 @@ type Exhibition = {
 
 export const exhibitions: Exhibition[] = [
   {
-    disabled: true,
+    // disabled: true,
     title: "AIとオセロ",
     image: {
       src: "img/othello.png",
@@ -35,7 +35,7 @@ export const exhibitions: Exhibition[] = [
     description: `
     6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
 				`,
-    url: "https://othello.utcode.net/",
+    url: "https://boardgame.utcode.net/",
     isNew: false,
     target: "どなたでも",
     takes: timeEst.short,
