@@ -72,13 +72,11 @@ export const exhibitions: Exhibition[] = [
   {
     title: "Falling Nikochan",
     image: {
-      src: "img/nikochan.png",
+      src: "img/nikochan_tetoris.webp",
       alt: "Nikochanのイメージ",
     },
     description: `
-    ダウンロード不要でブラウザーからすぐに遊べる、シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。
-
-    さらに、 Falling Nikochan では遊ぶだけでなく、アカウント登録やログイン不要で誰でも譜面を作成することができます。 作成した譜面はサーバーに保存され、SNS などで簡単に共有して他の人に遊んでもらうこともできます。
+    シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
 				`,
     url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
     isNew: true,
