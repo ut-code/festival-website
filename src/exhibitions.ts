@@ -55,15 +55,14 @@ export const exhibitions: Exhibition[] = [
     takes: timeEst.med,
   },
   {
-    title: "Shortcutゲーム",
+    title: "Shortcut Puzzle",
     image: {
-      src: "img/security.png",
+      src: "img/shortcut.png",
       alt: "Shortcutゲームのイメージ",
     },
     description: `
-    ダウンロード不要でブラウザーからすぐに遊べる、シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。
+    あなたは普段ショートカットキーを使ってますか？いつも多用している方も初めて聞いた方も、ショートカットを魔法のように操りましょう！2Dアクションパズルゲームの「Shortcut Puzzle」をぜひ遊んでみてください！ 
 
-    さらに、 Falling Nikochan では遊ぶだけでなく、アカウント登録やログイン不要で誰でも譜面を作成することができます。 作成した譜面はサーバーに保存され、SNS などで簡単に共有して他の人に遊んでもらうこともできます。
 				`,
     url: "https://shortcut-game.utcode.net/",
     isNew: true,
