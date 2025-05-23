@@ -68,7 +68,7 @@ export const exhibitions: Exhibition[] = [
     url: "https://shortcut-game.utcode.net/",
     isNew: true,
     target: "どなたでも",
-    takes: timeEst.short,
+    takes: timeEst.med,
   },
   {
     title: "Falling Nikochan",
