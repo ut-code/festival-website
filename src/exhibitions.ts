@@ -174,7 +174,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     description: `
     2024年5月に開催された新歓ハッカソンで、新入生たちがわずか2日間で作り上げた個人開発作品の展示です。ゲームやツール、学習コンテンツなど多彩なジャンルの中に、発想と技術の光る作品が勢ぞろい！初めての開発とは思えない完成度をぜひご覧ください。
 			`,
-    url: "/hackathon/",
+    url: "/hackathon",
     isNew: true,
     target: "どなたでも",
     takes: timeEst.med,

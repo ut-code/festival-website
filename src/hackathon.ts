@@ -32,7 +32,7 @@ export const exhibitions: Exhibition[] = [
       alt: "Fieldchatのイメージ",
     },
     description: `
-    登録すると謎の空間に送り込まれます。この空間にいる自分以外の●とチャットすることができます。WASDで移動、Enterで話しかけます。●の位置とメッセージは実はリアルタイムで更新されます。
+    登録すると謎の空間に送り込まれます。この空間にいる自分以外の●とチャットすることができます。WASDで移動、Enterで話しかけます。●の位置とメッセージは実はリアルタイムで更新されます。　※ページの表示に時間がかかる場合があります
 			`,
     url: "https://fieldchat2.onrender.com/",
     isNew: true,
@@ -48,7 +48,7 @@ export const exhibitions: Exhibition[] = [
     description: `
     球を避け続ける、ただそれだけのゲームです。 少しやってみたところ思っていたよりも難しく、40秒以内に終了してしまいます。 １分以上避け続けることができたら反射神経がきっとかなり良いです。
 
-    ＊ちなみにマウスカーソルをキャンバス上から外すと無敵になるという基本的な欠陥に完成してから気づきました。
+    ＊ちなみにマウスカーソルをキャンバス上から外すと無敵になるという基本的な欠陥に完成してから気づきました。　※ページの表示に時間がかかる場合があります
 				`,
     url: "https://hack-s3es.onrender.com/",
     isNew: true,
@@ -62,7 +62,7 @@ export const exhibitions: Exhibition[] = [
       alt: "scoundrelのイメージ",
     },
     description: `
-    1人用トランプゲームのScoundrel(悪党)を再現しました．本来のルールですと非常に高難易度でしたのでオリジナルでスキル機能をつくりました．ルール説明も設けましたがルールは調べた方がわかりやすいと思います．
+    1人用トランプゲームのScoundrel(悪党)を再現しました．本来のルールですと非常に高難易度でしたのでオリジナルでスキル機能をつくりました．ルール説明も設けましたがルールは調べた方がわかりやすいと思います．　※ページの表示に時間がかかる場合があります
 				`,
     url: "https://scoundel.onrender.com/",
     isNew: true,
@@ -78,7 +78,7 @@ export const exhibitions: Exhibition[] = [
     description: `
         タイピングゲームと英単語クイズを組み合わせたゲーム。
 
-        英検準一級の単語が表示されて、それをタイピングした後にその意味が選択肢で問われます。制限時間内にできるだけ多く解いきましょう。
+        英検準一級の単語が表示されて、それをタイピングした後にその意味が選択肢で問われます。制限時間内にできるだけ多く解いきましょう。　※ページの表示に時間がかかる場合があります
 			`,
     url: "https://hackerson1.onrender.com/",
     isNew: true,
@@ -94,7 +94,7 @@ export const exhibitions: Exhibition[] = [
     description: `
       ブロック崩しとタイピングを織り交ぜました。
 
-      ぜひ僕の記録を超えてください
+      ぜひ僕の記録を超えてください　※ページの表示に時間がかかる場合があります
   		`,
     url: "https://typing-3anr.onrender.com/",
     isNew: true,
@@ -108,8 +108,8 @@ export const exhibitions: Exhibition[] = [
       alt: "ごきげんくんのイメージ",
     },
     description: `
-    品目と賞味期限を入力し、賞味期限を管理するアプリです。データベースにつながっています。
-				`,
+      品目と賞味期限を入力し、賞味期限を管理するアプリです。データベースにつながっています。　※ページの表示に時間がかかる場合があります
+		  `,
     url: "https://stockmanagement-ad9g.onrender.com/",
     isNew: true,
     target: "大人向け",
@@ -122,7 +122,7 @@ export const exhibitions: Exhibition[] = [
       alt: "ピクセルアートのイメージ",
     },
     description: `
-    ピクセルアートが書けちゃうものです。自由に好きな絵を書いてみてください！
+      ピクセルアートが書けちゃうものです。自由に好きな絵を書いてみてください！　※ページの表示に時間がかかる場合があります
 			`,
     url: "https://pixelart-t3mu.onrender.com",
     isNew: true,
