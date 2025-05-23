@@ -47,7 +47,7 @@ Cloudflare の ut.code(); アカウントで管理しています。
 
 <!--
 WANT:
-- festival.utcode.net は常に最新を指すようにし、 {kf,mf}\d+.utcode.net (e.g. kf75.utcode.net) は各学園祭で固定したい。
+- {kf,mf}\d+.utcode.net (e.g. kf75.utcode.net) は各学園祭で固定したい。
 - これまでは毎回リポジトリを作り直していたが、これからは同一リポジトリで管理する。
 HOW:
 1. ブランチを分ける -> 誤って消しそうだが、これにする。
@@ -56,10 +56,24 @@ HOW:
 もっといい案があったら置き換えても良い。
 -->
 
+### 毎世代やること
+
+kf75 のときの例。
+
+(開発開始時)
+
+- Cloudflare Pages で新しい Pages を作る (kf75-website にすると分かりやすい)
+
+  - Pages の設定で特筆すべき点は、
+    - Production Branch -> `kf75`
+    - Branch Preview (in Branch Control) -> オフにする
+  - Custom Domain から `kf75.utcode.net` を使うように設定する
+
+- `utcode.net` の DSN 設定から `festival.utcode.net` を `kf75.utcode.net` に REDIRECT するようにする
+
 ### デプロイ
 
-main ブランチが自動で https://festival.utcode.net に反映されます。
-これとは別に、各学園祭ごとに `https://{kf,mf}\d+\.utcode\.net` の形式の URL を発行し、そちらに誘導するようにしてください。
+各学園祭ごとに `https://{kf,mf}\d+\.utcode\.net` の形式の URL を発行してください。
 
 以下は、過去の学園祭のものです。過去のものに触れる必要はありません。
 学園祭が終わり次第、その学園祭で発行したブランチにデプロイを紐づけて、下に追記してください。
