@@ -36,7 +36,7 @@ export const exhibitions: Exhibition[] = [
     6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
 				`,
     url: "https://othello.utcode.net/",
-    isNew: true,
+    isNew: false,
     target: "どなたでも",
     takes: timeEst.short,
   },
@@ -130,7 +130,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
         そこで、「ひとり麻雀」では平面の牌効率だけのパズルとしてもっと簡単に遊べるようにしました。
 			`,
     url: "https://mahjong.utcode.net/",
-    isNew: true,
+    isNew: false,
     target: "中高生以上におすすめ",
     takes: timeEst.short,
   },
@@ -164,5 +164,19 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     isNew: false,
     target: "大人向け",
     takes: timeEst.long,
+  },
+  {
+    title: "新歓ハッカソン作品",
+    image: {
+      src: "img/newcomers-hackathon.png",
+      alt: "ハッカソンのイメージ",
+    },
+    description: `
+    2024年5月に開催された新歓ハッカソンで、新入生たちがわずか2日間で作り上げた個人開発作品の展示です。ゲームやツール、学習コンテンツなど多彩なジャンルの中に、発想と技術の光る作品が勢ぞろい！初めての開発とは思えない完成度をぜひご覧ください。
+			`,
+    url: "/hackathon/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.med,
   },
 ];
