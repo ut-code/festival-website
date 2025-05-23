@@ -54,6 +54,38 @@ export const exhibitions: Exhibition[] = [
     target: "小学生以上におすすめ",
     takes: timeEst.med,
   },
+  {
+    title: "Shortcutゲーム",
+    image: {
+      src: "img/security.png",
+      alt: "Shortcutゲームのイメージ",
+    },
+    description: `
+    ダウンロード不要でブラウザーからすぐに遊べる、シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。
+
+    さらに、 Falling Nikochan では遊ぶだけでなく、アカウント登録やログイン不要で誰でも譜面を作成することができます。 作成した譜面はサーバーに保存され、SNS などで簡単に共有して他の人に遊んでもらうこともできます。
+				`,
+    url: "https://shortcut-game.pages.dev/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.short,
+  },
+  {
+    title: "Falling Nikochan",
+    image: {
+      src: "img/nikochan.png",
+      alt: "Nikochanのイメージ",
+    },
+    description: `
+    ダウンロード不要でブラウザーからすぐに遊べる、シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。
+
+    さらに、 Falling Nikochan では遊ぶだけでなく、アカウント登録やログイン不要で誰でも譜面を作成することができます。 作成した譜面はサーバーに保存され、SNS などで簡単に共有して他の人に遊んでもらうこともできます。
+				`,
+    url: "https://nikochan.utcode.net/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.short,
+  },
   /*
   {
     title: "ブロックプログラミングで並び替え",
@@ -73,20 +105,20 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   },
   */
 
-  {
-    title: "Blosite",
-    image: {
-      src: "img/blosite.png",
-      alt: "blosite のイメージ",
-    },
-    description: `
-    ブロックプログラミングで自分だけのウェブサイトを作りましょう！豊富なチュートリアルがあるので、プログラミングが初めての方でも楽しめます。作ったサイトはBlosite内で共有することもできます！他の人に作ったウェブサイトを自慢しちゃいましょう〜
-			`,
-    url: "https://blosite.utcode.net",
-    isNew: true,
-    target: "小学生以上におすすめ",
-    takes: timeEst.med,
-  },
+  // {
+  //   title: "Blosite",
+  //   image: {
+  //     src: "img/blosite.png",
+  //     alt: "blosite のイメージ",
+  //   },
+  //   description: `
+  //   ブロックプログラミングで自分だけのウェブサイトを作りましょう！豊富なチュートリアルがあるので、プログラミングが初めての方でも楽しめます。作ったサイトはBlosite内で共有することもできます！他の人に作ったウェブサイトを自慢しちゃいましょう〜
+  // 		`,
+  //   url: "https://blosite.utcode.net",
+  //   isNew: true,
+  //   target: "小学生以上におすすめ",
+  //   takes: timeEst.med,
+  // },
   {
     title: "ひとり麻雀",
     image: {
@@ -103,23 +135,23 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     target: "中高生以上におすすめ",
     takes: timeEst.short,
   },
-  {
-    title: "競馬AI",
-    image: {
-      src: "img/horse.png",
-      alt: "競馬のイメージ",
-    },
-    description: `
-      競馬をAIで予測しようというのがこのプロジェクトが発足した理由です。
-      そしてこのサイトではそのAIと対戦をしたり、AIの学習に使われたデータについて閲覧することが出来ます。
-      AIとの対戦ではランダムで出てくる過去データをもとに順位の予想勝負をしてもらいます。
-      ハイスコアを出すとランキングボードに乗ることが出来るのでぜひ頑張ってください。
-			`,
-    url: "https://keiba.utcode.net/",
-    isNew: true,
-    target: "中高生以上におすすめ",
-    takes: timeEst.med,
-  },
+  // {
+  //   title: "競馬AI",
+  //   image: {
+  //     src: "img/horse.png",
+  //     alt: "競馬のイメージ",
+  //   },
+  //   description: `
+  //     競馬をAIで予測しようというのがこのプロジェクトが発足した理由です。
+  //     そしてこのサイトではそのAIと対戦をしたり、AIの学習に使われたデータについて閲覧することが出来ます。
+  //     AIとの対戦ではランダムで出てくる過去データをもとに順位の予想勝負をしてもらいます。
+  //     ハイスコアを出すとランキングボードに乗ることが出来るのでぜひ頑張ってください。
+  // 		`,
+  //   url: "https://keiba.utcode.net/",
+  //   isNew: true,
+  //   target: "中高生以上におすすめ",
+  //   takes: timeEst.med,
+  // },
   {
     title: "ハッカーになろう",
     image: {
