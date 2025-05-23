@@ -65,7 +65,7 @@ export const exhibitions: Exhibition[] = [
 
     さらに、 Falling Nikochan では遊ぶだけでなく、アカウント登録やログイン不要で誰でも譜面を作成することができます。 作成した譜面はサーバーに保存され、SNS などで簡単に共有して他の人に遊んでもらうこともできます。
 				`,
-    url: "https://shortcut-game.pages.dev/",
+    url: "https://shortcut-game.utcode.net/",
     isNew: true,
     target: "どなたでも",
     takes: timeEst.short,
