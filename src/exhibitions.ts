@@ -26,19 +26,19 @@ type Exhibition = {
 
 export const exhibitions: Exhibition[] = [
   {
-    // disabled: true,
-    title: "AIとオセロ",
+    title: "Shortcut Puzzle",
     image: {
-      src: "img/othello.png",
-      alt: "オセロのイメージ",
+      src: "img/shortcut.png",
+      alt: "Shortcutゲームのイメージ",
     },
     description: `
-    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
+    あなたは普段ショートカットキーを使ってますか？いつも多用している方も初めて聞いた方も、ショートカットを魔法のように操りましょう！2Dアクションパズルゲームの「Shortcut Puzzle」をぜひ遊んでみてください！ 
+
 				`,
-    url: "https://boardgame.utcode.net/",
-    isNew: false,
+    url: "https://shortcut-game.utcode.net/",
+    isNew: true,
     target: "どなたでも",
-    takes: timeEst.short,
+    takes: timeEst.med,
   },
   {
     title: "はじめてのプログラミング 迷路",
@@ -55,31 +55,17 @@ export const exhibitions: Exhibition[] = [
     takes: timeEst.med,
   },
   {
-    title: "Shortcut Puzzle",
+    // disabled: true,
+    title: "AIとオセロ",
     image: {
-      src: "img/shortcut.png",
-      alt: "Shortcutゲームのイメージ",
+      src: "img/othello.png",
+      alt: "オセロのイメージ",
     },
     description: `
-    あなたは普段ショートカットキーを使ってますか？いつも多用している方も初めて聞いた方も、ショートカットを魔法のように操りましょう！2Dアクションパズルゲームの「Shortcut Puzzle」をぜひ遊んでみてください！ 
-
+    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
 				`,
-    url: "https://shortcut-game.utcode.net/",
-    isNew: true,
-    target: "どなたでも",
-    takes: timeEst.med,
-  },
-  {
-    title: "Falling Nikochan",
-    image: {
-      src: "img/nikochan_tetoris.webp",
-      alt: "Nikochanのイメージ",
-    },
-    description: `
-    シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
-				`,
-    url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
-    isNew: true,
+    url: "https://boardgame.utcode.net/",
+    isNew: false,
     target: "どなたでも",
     takes: timeEst.short,
   },
@@ -176,5 +162,19 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     isNew: true,
     target: "どなたでも",
     takes: timeEst.med,
+  },
+  {
+    title: "Falling Nikochan",
+    image: {
+      src: "img/nikochan_tetoris.webp",
+      alt: "Nikochanのイメージ",
+    },
+    description: `
+    シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
+				`,
+    url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.short,
   },
 ];

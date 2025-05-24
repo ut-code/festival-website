@@ -1,7 +1,7 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import { exhibitions } from "../exhibitions";
+import { exhibitions } from "../exhibitions.ts";
 
 const trackerURL = "https://" + "tracker.ut-code.workers" + ".dev";
 
