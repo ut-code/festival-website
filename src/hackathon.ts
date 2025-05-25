@@ -129,4 +129,18 @@ export const exhibitions: Exhibition[] = [
     target: "小学生以上におすすめ",
     takes: timeEst.short,
   },
+  {
+    title: "WebIMEBuilder",
+    image: {
+      src: "../img/webimebuilder.webp",
+      alt: "WebIMEBuilderのイメージ",
+    },
+    description: `
+      IMEを簡単に自作できるツールです。　※ページの表示に時間がかかる場合があります
+			`,
+    url: "https://web-ime-builder.pages.dev/",
+    isNew: true,
+    target: "小学生以上におすすめ",
+    takes: timeEst.short,
+  },
 ];
