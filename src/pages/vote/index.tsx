@@ -20,13 +20,13 @@ export default function Home(): JSX.Element {
       <main className="container padding-vert--lg">
         <p>
           本日は企画にお越しいただきありがとうございます。次のQRコードまたは
-          <a href="https://www.komabasai.net/75/visitor/project/357">
+          <a href="https://gogatsusai.jp/98/visitor/project/261">
             こちらのリンク
           </a>
-          から駒場祭グランプリへの投票をお願いしております。1分ほどで完了しますので、次の動画を参考に投票をお願いします！
+          から五月祭グランプリへの投票をお願いしております。1分ほどで完了しますので、次の動画を参考に投票をお願いします！
         </p>
         <div className={styles.container}>
-          <img src="/img/kf75QR.svg" width={"500px"} height={"500px"}></img>
+          <img src="/img/mf98-vote.png" width={"500px"} height={"500px"}></img>
           <video
             src={howToVoteVideo}
             controls

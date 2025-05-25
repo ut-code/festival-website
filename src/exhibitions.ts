@@ -26,19 +26,19 @@ type Exhibition = {
 
 export const exhibitions: Exhibition[] = [
   {
-    disabled: true,
-    title: "AIとオセロ",
+    title: "Shortcut Puzzle",
     image: {
-      src: "img/othello.png",
-      alt: "オセロのイメージ",
+      src: "img/shortcut.png",
+      alt: "Shortcutゲームのイメージ",
     },
     description: `
-    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
+    あなたは普段ショートカットキーを使ってますか？いつも多用している方も初めて聞いた方も、ショートカットを魔法のように操りましょう！2Dアクションパズルゲームの「Shortcut Puzzle」をぜひ遊んでみてください！ 
+
 				`,
-    url: "https://othello.utcode.net/",
+    url: "https://shortcut-game.utcode.net/",
     isNew: true,
     target: "どなたでも",
-    takes: timeEst.short,
+    takes: timeEst.med,
   },
   {
     title: "はじめてのプログラミング 迷路",
@@ -53,6 +53,21 @@ export const exhibitions: Exhibition[] = [
     isNew: false,
     target: "小学生以上におすすめ",
     takes: timeEst.med,
+  },
+  {
+    // disabled: true,
+    title: "AIとオセロ",
+    image: {
+      src: "img/othello.png",
+      alt: "オセロのイメージ",
+    },
+    description: `
+    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？ ※iPhone/iPad/Macでは動作しない可能性があります
+				`,
+    url: "https://boardgame.utcode.net/",
+    isNew: false,
+    target: "どなたでも",
+    takes: timeEst.short,
   },
   /*
   {
@@ -73,20 +88,20 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   },
   */
 
-  {
-    title: "Blosite",
-    image: {
-      src: "img/blosite.png",
-      alt: "blosite のイメージ",
-    },
-    description: `
-    ブロックプログラミングで自分だけのウェブサイトを作りましょう！豊富なチュートリアルがあるので、プログラミングが初めての方でも楽しめます。作ったサイトはBlosite内で共有することもできます！他の人に作ったウェブサイトを自慢しちゃいましょう〜
-			`,
-    url: "https://blosite.utcode.net",
-    isNew: true,
-    target: "小学生以上におすすめ",
-    takes: timeEst.med,
-  },
+  // {
+  //   title: "Blosite",
+  //   image: {
+  //     src: "img/blosite.png",
+  //     alt: "blosite のイメージ",
+  //   },
+  //   description: `
+  //   ブロックプログラミングで自分だけのウェブサイトを作りましょう！豊富なチュートリアルがあるので、プログラミングが初めての方でも楽しめます。作ったサイトはBlosite内で共有することもできます！他の人に作ったウェブサイトを自慢しちゃいましょう〜
+  // 		`,
+  //   url: "https://blosite.utcode.net",
+  //   isNew: true,
+  //   target: "小学生以上におすすめ",
+  //   takes: timeEst.med,
+  // },
   {
     title: "ひとり麻雀",
     image: {
@@ -99,27 +114,27 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
         そこで、「ひとり麻雀」では平面の牌効率だけのパズルとしてもっと簡単に遊べるようにしました。
 			`,
     url: "https://mahjong.utcode.net/",
-    isNew: true,
+    isNew: false,
     target: "中高生以上におすすめ",
     takes: timeEst.short,
   },
-  {
-    title: "競馬AI",
-    image: {
-      src: "img/horse.png",
-      alt: "競馬のイメージ",
-    },
-    description: `
-      競馬をAIで予測しようというのがこのプロジェクトが発足した理由です。
-      そしてこのサイトではそのAIと対戦をしたり、AIの学習に使われたデータについて閲覧することが出来ます。
-      AIとの対戦ではランダムで出てくる過去データをもとに順位の予想勝負をしてもらいます。
-      ハイスコアを出すとランキングボードに乗ることが出来るのでぜひ頑張ってください。
-			`,
-    url: "https://keiba.utcode.net/",
-    isNew: true,
-    target: "中高生以上におすすめ",
-    takes: timeEst.med,
-  },
+  // {
+  //   title: "競馬AI",
+  //   image: {
+  //     src: "img/horse.png",
+  //     alt: "競馬のイメージ",
+  //   },
+  //   description: `
+  //     競馬をAIで予測しようというのがこのプロジェクトが発足した理由です。
+  //     そしてこのサイトではそのAIと対戦をしたり、AIの学習に使われたデータについて閲覧することが出来ます。
+  //     AIとの対戦ではランダムで出てくる過去データをもとに順位の予想勝負をしてもらいます。
+  //     ハイスコアを出すとランキングボードに乗ることが出来るのでぜひ頑張ってください。
+  // 		`,
+  //   url: "https://keiba.utcode.net/",
+  //   isNew: true,
+  //   target: "中高生以上におすすめ",
+  //   takes: timeEst.med,
+  // },
   {
     title: "ハッカーになろう",
     image: {
@@ -133,5 +148,33 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     isNew: false,
     target: "大人向け",
     takes: timeEst.long,
+  },
+  {
+    title: "新歓ハッカソン作品",
+    image: {
+      src: "img/newcomers-hackathon.png",
+      alt: "ハッカソンのイメージ",
+    },
+    description: `
+    2024年5月に開催された新歓ハッカソンで、新入生たちがわずか2日間で作り上げた個人開発作品の展示です。ゲームやツール、学習コンテンツなど多彩なジャンルの中に、発想と技術の光る作品が勢ぞろい！初めての開発とは思えない完成度をぜひご覧ください。
+			`,
+    url: "/hackathon",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.med,
+  },
+  {
+    title: "Falling Nikochan",
+    image: {
+      src: "img/nikochan_tetoris.webp",
+      alt: "Nikochanのイメージ",
+    },
+    description: `
+    シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
+				`,
+    url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.short,
   },
 ];
