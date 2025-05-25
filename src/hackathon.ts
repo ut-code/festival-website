@@ -26,18 +26,34 @@ type Exhibition = {
 
 export const exhibitions: Exhibition[] = [
   {
-    title: "Fieldchat",
+    title: "タイピングゲームとブロック崩しを組み合わせたゲーム",
     image: {
-      src: "../img/field-chat.webp",
-      alt: "Fieldchatのイメージ",
+      src: "../img/typing-breakout.webp",
+      alt: "タイピングゲームとブロック崩しを組み合わせたゲームのイメージ",
     },
     description: `
-    登録すると謎の空間に送り込まれます。この空間にいる自分以外の●とチャットすることができます。WASDで移動、Enterで話しかけます。●の位置とメッセージは実はリアルタイムで更新されます。　※ページの表示に時間がかかる場合があります
-			`,
-    url: "https://fieldchat2.onrender.com/",
+      ブロック崩しとタイピングを織り交ぜました。
+
+      ぜひ僕の記録を超えてください　※ページの表示に時間がかかる場合があります
+  		`,
+    url: "https://typing-3anr.onrender.com/",
     isNew: true,
-    target: "中高生以上におすすめ",
-    takes: timeEst.med,
+    target: "小学生以上におすすめ",
+    takes: timeEst.short,
+  },
+  {
+    title: "ピクセルアート",
+    image: {
+      src: "../img/pixel-art.webp",
+      alt: "ピクセルアートのイメージ",
+    },
+    description: `
+      ピクセルアートが書けちゃうものです。自由に好きな絵を書いてみてください！　※ページの表示に時間がかかる場合があります
+			`,
+    url: "https://pixelart-t3mu.onrender.com",
+    isNew: true,
+    target: "小学生以上におすすめ",
+    takes: timeEst.short,
   },
   {
     title: "玉避けゲーム",
@@ -86,17 +102,15 @@ export const exhibitions: Exhibition[] = [
     takes: timeEst.short,
   },
   {
-    title: "タイピングゲームとブロック崩しを組み合わせたゲーム",
+    title: "WebIMEBuilder",
     image: {
-      src: "../img/typing-breakout.webp",
-      alt: "タイピングゲームとブロック崩しを組み合わせたゲームのイメージ",
+      src: "../img/webimebuilder.webp",
+      alt: "WebIMEBuilderのイメージ",
     },
     description: `
-      ブロック崩しとタイピングを織り交ぜました。
-
-      ぜひ僕の記録を超えてください　※ページの表示に時間がかかる場合があります
-  		`,
-    url: "https://typing-3anr.onrender.com/",
+      IMEを簡単に自作できるツールです。　※ページの表示に時間がかかる場合があります
+			`,
+    url: "https://web-ime-builder.pages.dev/",
     isNew: true,
     target: "小学生以上におすすめ",
     takes: timeEst.short,
@@ -116,31 +130,17 @@ export const exhibitions: Exhibition[] = [
     takes: timeEst.med,
   },
   {
-    title: "ピクセルアート",
+    title: "Fieldchat",
     image: {
-      src: "../img/pixel-art.webp",
-      alt: "ピクセルアートのイメージ",
+      src: "../img/field-chat.webp",
+      alt: "Fieldchatのイメージ",
     },
     description: `
-      ピクセルアートが書けちゃうものです。自由に好きな絵を書いてみてください！　※ページの表示に時間がかかる場合があります
+    登録すると謎の空間に送り込まれます。この空間にいる自分以外の●とチャットすることができます。WASDで移動、Enterで話しかけます。●の位置とメッセージは実はリアルタイムで更新されます。　※ページの表示に時間がかかる場合があります
 			`,
-    url: "https://pixelart-t3mu.onrender.com",
+    url: "https://fieldchat2.onrender.com/",
     isNew: true,
-    target: "小学生以上におすすめ",
-    takes: timeEst.short,
-  },
-  {
-    title: "WebIMEBuilder",
-    image: {
-      src: "../img/webimebuilder.webp",
-      alt: "WebIMEBuilderのイメージ",
-    },
-    description: `
-      IMEを簡単に自作できるツールです。　※ページの表示に時間がかかる場合があります
-			`,
-    url: "https://web-ime-builder.pages.dev/",
-    isNew: true,
-    target: "小学生以上におすすめ",
-    takes: timeEst.short,
+    target: "中高生以上におすすめ",
+    takes: timeEst.med,
   },
 ];
