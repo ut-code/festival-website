@@ -1,7 +1,7 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import Heading from "@theme/Heading";
-import { exhibitions } from "../exhibitions.ts";
+import { exhibitions } from "../../hackathon";
 
 const trackerURL = "https://" + "tracker.ut-code.workers" + ".dev";
 
@@ -18,6 +18,19 @@ export default function Home(): JSX.Element {
         </div>
       </header>
       <main className="container padding-vert--lg">
+        <div>
+          <a className="padding--md" href="/">
+            - トップに戻る
+          </a>
+          <div className="padding--md">
+            <h1>新歓ハッカソン作品</h1>
+            <p>
+              2024年5月に開催された新歓ハッカソンで、新入生たちがわずか2日間で作り上げた個人開発作品の展示です。
+              <br />
+              ゲームやツール、学習コンテンツなど多彩なジャンルの中に、発想と技術の光る作品が勢ぞろい！初めての開発とは思えない完成度をぜひご覧ください。
+            </p>
+          </div>
+        </div>
         <ul
           className="row row--no-gutters"
           style={{
