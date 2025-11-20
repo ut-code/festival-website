@@ -76,7 +76,7 @@ export default function Home(): JSX.Element {
                     rel="noreferrer"
                     className="button button--primary button--block"
                   >
-                    この企画を体験する
+                    {ex.disabled ? "準備中…" : "この企画を体験する"}
                   </button>
                 </div>
               </div>

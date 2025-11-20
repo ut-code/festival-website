@@ -5,7 +5,9 @@ type TargetAge =
   | "大人向け";
 const timeEst = {
   short: "5分程度",
+  short_med: "5～15分ほど",
   med: "15分ほど",
+  med_long: "5～15分ほど",
   long: "30分〜",
 } as const;
 type TimeEst = (typeof timeEst)[keyof typeof timeEst];
@@ -26,21 +28,6 @@ type Exhibition = {
 
 export const exhibitions: Exhibition[] = [
   {
-    title: "Shortcut Puzzle",
-    image: {
-      src: "img/shortcut.png",
-      alt: "Shortcutゲームのイメージ",
-    },
-    description: `
-    あなたは普段ショートカットキーを使ってますか？いつも多用している方も初めて聞いた方も、ショートカットを魔法のように操りましょう！2Dアクションパズルゲームの「Shortcut Puzzle」をぜひ遊んでみてください！ 
-
-				`,
-    url: "https://shortcut-game.utcode.net/",
-    isNew: true,
-    target: "どなたでも",
-    takes: timeEst.med,
-  },
-  {
     title: "はじめてのプログラミング 迷路",
     image: {
       src: "img/maze.png",
@@ -56,125 +43,97 @@ export const exhibitions: Exhibition[] = [
   },
   {
     // disabled: true,
-    title: "AIとオセロ",
+    title: "8番ページ",
     image: {
-      src: "img/othello.png",
-      alt: "オセロのイメージ",
+      src: "img/page8.jpeg",
+      alt: `「8番ページ」と"Page 8"が合わさったスタイリッシュなロゴ`,
     },
     description: `
-    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
-				`,
-    url: "https://boardgame.utcode.net/",
-    isNew: false,
+      『8番ページ』は、あなたを奇妙なループに閉じ込める、
+      “Web上の 8 番出口”をモチーフにしたゲームです。
+      何度も繰り返されるページの中で、
+      ほんのわずかな異変を見つけてください。
+      あなたは、このループから抜け出せますか？
+		`,
+    url: "https://page8.utcode.net",
+    isNew: true,
     target: "どなたでも",
-    takes: timeEst.short,
+    takes: timeEst.long,
   },
-  /*
   {
-    title: "ブロックプログラミングで並び替え",
-    coverImage: {
-      src: "https://source.unsplash.com/hLvQ4-QEBAE/800x300",
-      alt: "身長順で並び替えのイメージ",
-    },
-    description:
-      // prettier-ignore
-      <p>
-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis incidunt harum, maiores accusantium reiciendis id error nobis! Molestiae odit dignissimos illo nisi aperiam quod repellat placeat voluptas.
-      </p>,
-    linkTo: "/sort",
-    targetAge: "小学生以上におすすめ",
-    isNew: false,
-    requiredTime: "10分～",
-  },
-  */
-
-  // {
-  //   title: "Blosite",
-  //   image: {
-  //     src: "img/blosite.png",
-  //     alt: "blosite のイメージ",
-  //   },
-  //   description: `
-  //   ブロックプログラミングで自分だけのウェブサイトを作りましょう！豊富なチュートリアルがあるので、プログラミングが初めての方でも楽しめます。作ったサイトはBlosite内で共有することもできます！他の人に作ったウェブサイトを自慢しちゃいましょう〜
-  // 		`,
-  //   url: "https://blosite.utcode.net",
-  //   isNew: true,
-  //   target: "小学生以上におすすめ",
-  //   takes: timeEst.med,
-  // },
-  {
-    title: "ひとり麻雀",
+    // disabled: true,
+    title: "ブラウザハック入門",
     image: {
-      src: "img/hitori-mahjong.png",
-      alt: "麻雀のイメージ",
+      src: "img/browser-hack.png",
+      alt: `プラウザを用いてWebサイトをハッキングしている様子`,
     },
     description: `
-        麻雀はハマると抜け出せなくなるくらい面白いにもかかわらず、鳴きや点数計算、
-        押し引きといったように様々な要素があるため、始めるハードルが上がってしまっています。
-        そこで、「ひとり麻雀」では平面の牌効率だけのパズルとしてもっと簡単に遊べるようにしました。
-			`,
-    url: "https://mahjong.utcode.net/",
-    isNew: false,
+      普段見ているWebサイトには、実は「裏側」がある。Chromeに標準搭載された開発者ツールを使えば、誰でもその秘密を覗ける。コードを読み解き、仕組みを暴く——初心者でも楽しめる4つのハックミッションで、Webの世界の扉を開けよう。
+		`,
+    url: "https://browser-hack.utcode.net/",
+    isNew: true,
+    target: "中高生以上におすすめ",
+    takes: timeEst.long,
+  },
+  {
+    // disabled: true,
+    title: "Life Code",
+    image: {
+      src: "img/Life-Code_thumb-nail.gif",
+      alt: `Life Codeのロゴがライフゲームの規則に従って変化して消える様子`,
+    },
+    description: `
+      "Life Codeは、自分でルールを変えながら遊べるライフゲームです。
+      コードを書きかえるとマスの中の「いのち」の動きが変わります。
+      プログラミングで実験しながら、ふしぎな世界を作り出せるゲームです。"
+		`,
+    url: "https://life-code.utcode.net/",
+    isNew: true,
+    target: "中高生以上におすすめ",
+    takes: timeEst.short_med,
+  },
+  {
+    disabled: true,
+    title: "Hack-shooter",
+    image: {
+      src: "img/Hackshooter_theme.png",
+      alt: `Life Codeのロゴがライフゲームの規則に従って変化して消える様子`,
+    },
+    description: `
+      シューティングゲームの裏側をプログラミングすることによって、より簡単に、よりスマートにゲームを攻略しよう！
+		`,
+    url: "https://life-code.utcode.net/",
+    isNew: true,
+    target: "小学生以上におすすめ",
+    takes: timeEst.med_long,
+  },
+  {
+    // disabled: true,
+    title: "プラス演算子ゲーム",
+    image: {
+      src: "img/plus_operator_game.png",
+      alt: `Life Codeのロゴがライフゲームの規則に従って変化して消える様子`,
+    },
+    description: `
+      「プラス演算子ゲーム」へようこそ！このゲームは、数字が書かれたカードと様々な効果を持つ「演算子」カードを駆使して、場に並べられたすべての数字を「1」にすることを目指す、戦略的パズルゲームです。ひらめきと論理的思考を武器に、最短手数でのクリアを目指しましょう！
+		`,
+    url: "https://plusoperatorgame.onrender.com",
+    isNew: true,
     target: "中高生以上におすすめ",
     takes: timeEst.short,
   },
   // {
-  //   title: "競馬AI",
+  //   title: "Falling Nikochan",
   //   image: {
-  //     src: "img/horse.png",
-  //     alt: "競馬のイメージ",
+  //     src: "img/nikochan_tetoris.webp",
+  //     alt: "Nikochanのイメージ",
   //   },
   //   description: `
-  //     競馬をAIで予測しようというのがこのプロジェクトが発足した理由です。
-  //     そしてこのサイトではそのAIと対戦をしたり、AIの学習に使われたデータについて閲覧することが出来ます。
-  //     AIとの対戦ではランダムで出てくる過去データをもとに順位の予想勝負をしてもらいます。
-  //     ハイスコアを出すとランキングボードに乗ることが出来るのでぜひ頑張ってください。
-  // 		`,
-  //   url: "https://keiba.utcode.net/",
+  //   シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
+  // 			`,
+  //   url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
   //   isNew: true,
-  //   target: "中高生以上におすすめ",
-  //   takes: timeEst.med,
+  //   target: "どなたでも",
+  //   takes: timeEst.short,
   // },
-  {
-    title: "ハッカーになろう",
-    image: {
-      src: "img/security.png",
-      alt: "セキュリティのイメージ",
-    },
-    description: `
-    悪用厳禁！Web サービスを攻撃して、隠された秘密のデータを盗み出そう！ 実際に使われたことのあるサイバー攻撃手法を習得して、あなたもついにハッカーデビュー！？ インターネット上の詐欺から身を守る方法も学べます。
-				`,
-    url: "https://security.utcode.net/",
-    isNew: false,
-    target: "大人向け",
-    takes: timeEst.long,
-  },
-  {
-    title: "新歓ハッカソン作品",
-    image: {
-      src: "img/newcomers-hackathon.png",
-      alt: "ハッカソンのイメージ",
-    },
-    description: `
-    2024年5月に開催された新歓ハッカソンで、新入生たちがわずか2日間で作り上げた個人開発作品の展示です。ゲームやツール、学習コンテンツなど多彩なジャンルの中に、発想と技術の光る作品が勢ぞろい！初めての開発とは思えない完成度をぜひご覧ください。
-			`,
-    url: "/hackathon",
-    isNew: true,
-    target: "どなたでも",
-    takes: timeEst.med,
-  },
-  {
-    title: "Falling Nikochan",
-    image: {
-      src: "img/nikochan_tetoris.webp",
-      alt: "Nikochanのイメージ",
-    },
-    description: `
-    シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
-				`,
-    url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
-    isNew: true,
-    target: "どなたでも",
-    takes: timeEst.short,
-  },
 ];
