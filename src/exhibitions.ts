@@ -122,6 +122,21 @@ export const exhibitions: Exhibition[] = [
     target: "中高生以上におすすめ",
     takes: timeEst.short,
   },
+  {
+    // disabled: true,
+    title: "AIとオセロ",
+    image: {
+      src: "img/othello.png",
+      alt: "オセロのイメージ",
+    },
+    description: `
+    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
+				`,
+    url: "https://boardgame.utcode.net/",
+    isNew: false,
+    target: "どなたでも",
+    takes: timeEst.short,
+  },
   // {
   //   title: "Falling Nikochan",
   //   image: {
