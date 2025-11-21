@@ -4,8 +4,8 @@ import Heading from "@theme/Heading";
 import { exhibitions } from "../exhibitions.ts";
 
 const trackerURL = "https://" + "tracker.ut-code.workers" + ".dev";
-
 export default function Home(): JSX.Element {
+  const is_offline = !!localStorage.getItem("is_offline");
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout>
@@ -56,27 +56,38 @@ export default function Home(): JSX.Element {
                 <div className="card__footer">
                   <button
                     type="button"
-                    disabled={ex.disabled}
+                    disabled={ex.disabled || (ex.offline_only && !is_offline)}
                     onClick={async () => {
                       console.log(`clicked ${ex.title}`);
                       const url = ex.url;
-                      window.open(url, "_blank").focus();
-                      // CORS の関係でエラーが出るが、特に問題ないので放置。
-                      try {
-                        await fetch(trackerURL, {
-                          method: "POST",
-                          body: JSON.stringify({
-                            url,
-                            key: "2e0c7cad39e09314a46f217c6107f96e08bd13984cd4ae4c29d96f5db440dba8",
-                            kind: "festival",
-                          }),
-                        });
-                      } catch (err) {}
+                      if (url) {
+                        window.open(url, "_blank").focus();
+                        // CORS の関係でエラーが出るが、特に問題ないので放置。
+                        try {
+                          await fetch(trackerURL, {
+                            method: "POST",
+                            body: JSON.stringify({
+                              url,
+                              key: "2e0c7cad39e09314a46f217c6107f96e08bd13984cd4ae4c29d96f5db440dba8",
+                              kind: "festival",
+                            }),
+                          });
+                        } catch (err) {}
+                      } else {
+                        const dialog = ex.dialog;
+                        if (dialog) {
+                          alert(dialog);
+                        }
+                      }
                     }}
                     rel="noreferrer"
                     className="button button--primary button--block"
                   >
-                    {ex.disabled ? "準備中…" : "この企画を体験する"}
+                    {ex.disabled
+                      ? "準備中…"
+                      : ex.offline_only && !is_offline
+                        ? "実地のみ"
+                        : "この企画を体験する"}
                   </button>
                 </div>
               </div>

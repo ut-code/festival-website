@@ -19,11 +19,13 @@ type Exhibition = {
     alt: string;
   };
   description: string;
-  url: string;
+  url?: string;
+  dialog?: string;
   isNew: boolean;
   target: TargetAge;
   takes: TimeEst;
   disabled?: boolean;
+  offline_only?: boolean;
 };
 
 export const exhibitions: Exhibition[] = [
@@ -61,7 +63,7 @@ export const exhibitions: Exhibition[] = [
     takes: timeEst.long,
   },
   {
-    // disabled: true,
+    offline_only: true,
     title: "ブラウザハック入門",
     image: {
       src: "img/browser-hack.png",
@@ -93,7 +95,8 @@ export const exhibitions: Exhibition[] = [
     takes: timeEst.short_med,
   },
   {
-    disabled: true,
+    // disabled: true,
+    offline_only: true,
     title: "Hack-shooter",
     image: {
       src: "img/Hackshooter_theme.png",
@@ -102,7 +105,7 @@ export const exhibitions: Exhibition[] = [
     description: `
       シューティングゲームの裏側をプログラミングすることによって、より簡単に、よりスマートにゲームを攻略しよう！
 		`,
-    url: "https://life-code.utcode.net/",
+    dialog: "タスクバーにあるペンギンのアイコンをクリックしてください。",
     isNew: true,
     target: "小学生以上におすすめ",
     takes: timeEst.med_long,
@@ -119,7 +122,7 @@ export const exhibitions: Exhibition[] = [
 		`,
     url: "https://plusoperatorgame.onrender.com",
     isNew: true,
-    target: "中高生以上におすすめ",
+    target: "小学生以上におすすめ",
     takes: timeEst.short,
   },
   {
