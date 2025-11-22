@@ -68,7 +68,10 @@ export default function Home(): JSX.Element {
                           onClick={async () => {
                             console.log(`clicked ${ex.title}`);
                             const url = ex.url;
-                            if (url) {
+                            const dialog = ex.dialog;
+                            if (is_offline && dialog) {
+                              alert(dialog);
+                            } else if (url) {
                               window.open(url, "_blank").focus();
                               // CORS の関係でエラーが出るが、特に問題ないので放置。
                               try {
@@ -81,11 +84,6 @@ export default function Home(): JSX.Element {
                                   }),
                                 });
                               } catch (err) {}
-                            } else {
-                              const dialog = ex.dialog;
-                              if (dialog) {
-                                alert(dialog);
-                              }
                             }
                           }}
                           rel="noreferrer"
