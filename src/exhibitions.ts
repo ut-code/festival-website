@@ -96,7 +96,7 @@ export const exhibitions: Exhibition[] = [
   },
   {
     // disabled: true,
-    offline_only: true,
+    offline_only: false,
     title: "Hack-shooter",
     image: {
       src: "img/Hackshooter_theme.png",
@@ -105,6 +105,7 @@ export const exhibitions: Exhibition[] = [
     description: `
       シューティングゲームの裏側をプログラミングすることによって、より簡単に、よりスマートにゲームを攻略しよう！
 		`,
+    url: "https://github.com/ut-code/HackShooter/releases/tag/v1.2",
     dialog: "タスクバーにあるペンギンのアイコンをクリックしてください。",
     isNew: true,
     target: "小学生以上におすすめ",
