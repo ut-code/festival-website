@@ -85,7 +85,7 @@ const config = {
                 href: "https://utcode.net/",
               },
               {
-                label: "Twitter",
+                label: "X（旧Twitter）",
                 href: "https://twitter.com/utokyo_code",
               },
             ],
