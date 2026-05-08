@@ -4,9 +4,10 @@ type TargetAge =
   | "中高生以上におすすめ"
   | "大人向け";
 const timeEst = {
-  short: "5分程度",
-  med: "15分ほど",
-  long: "30分〜",
+  s: "5分程度",
+  m: "15分ほど",
+  l: "20〜30分",
+  xl: "30分〜",
 } as const;
 type TimeEst = (typeof timeEst)[keyof typeof timeEst];
 
@@ -25,6 +26,7 @@ type Exhibition = {
 };
 
 export const exhibitions: Exhibition[] = [
+  /*
   {
     title: "Shortcut Puzzle",
     image: {
@@ -38,8 +40,9 @@ export const exhibitions: Exhibition[] = [
     url: "https://shortcut-game.utcode.net/",
     isNew: true,
     target: "どなたでも",
-    takes: timeEst.med,
+    takes: timeEst.m,
   },
+  */
   {
     title: "はじめてのプログラミング 迷路",
     image: {
@@ -52,7 +55,7 @@ export const exhibitions: Exhibition[] = [
     url: "https://maze.utcode.net/",
     isNew: false,
     target: "小学生以上におすすめ",
-    takes: timeEst.med,
+    takes: timeEst.m,
   },
   {
     // disabled: true,
@@ -67,7 +70,36 @@ export const exhibitions: Exhibition[] = [
     url: "https://boardgame.utcode.net/",
     isNew: false,
     target: "どなたでも",
-    takes: timeEst.short,
+    takes: timeEst.s,
+  },
+  {
+    title: "Space Simulator",
+    image: {
+      src: "img/space.png",
+      alt: "宇宙シミュレータのイメージ",
+    },
+    description: `
+    "Space Simulator"は、惑星を自由に配置し、宇宙の動きをシミュレーションできるゲームです。テンプレートから始めたり、惑星の半径や位置を調整したりしながら、自分だけのオリジナル宇宙を作り上げましょう！
+			`,
+    url: "https://space-simulator.utcode.net/",
+    isNew: true,
+    target: "小学生以上におすすめ",
+    takes: timeEst.m,
+  },
+
+  {
+    title: "ビリヤードゲーム",
+    image: {
+      src: "img/billiards.png",
+      alt: "ビリヤードのイメージ",
+    },
+    description: `
+    ビリヤードの3D版ソロチャレンジ。限られた打数で全てのボールをポケットに落とせばクリア。様々なギミックを攻略して、戦略とテクニックを磨こう。
+			`,
+    url: "https://billiards-game.utcode.net/",
+    isNew: true,
+    target: "小学生以上におすすめ",
+    takes: timeEst.l,
   },
   /*
   {
@@ -100,8 +132,9 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   //   url: "https://blosite.utcode.net",
   //   isNew: true,
   //   target: "小学生以上におすすめ",
-  //   takes: timeEst.med,
+  //   takes: timeEst.m,
   // },
+  /*
   {
     title: "ひとり麻雀",
     image: {
@@ -116,8 +149,9 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     url: "https://mahjong.utcode.net/",
     isNew: false,
     target: "中高生以上におすすめ",
-    takes: timeEst.short,
+    takes: timeEst.s,
   },
+  */
   // {
   //   title: "競馬AI",
   //   image: {
@@ -133,8 +167,9 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   //   url: "https://keiba.utcode.net/",
   //   isNew: true,
   //   target: "中高生以上におすすめ",
-  //   takes: timeEst.med,
+  //   takes: timeEst.m,
   // },
+  /*
   {
     title: "ハッカーになろう",
     image: {
@@ -147,8 +182,10 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     url: "https://security.utcode.net/",
     isNew: false,
     target: "大人向け",
-    takes: timeEst.long,
+    takes: timeEst.xl,
   },
+  */
+  /*
   {
     title: "新歓ハッカソン作品",
     image: {
@@ -161,8 +198,10 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     url: "/hackathon",
     isNew: true,
     target: "どなたでも",
-    takes: timeEst.med,
+    takes: timeEst.m,
   },
+  */
+  /*
   {
     title: "Falling Nikochan",
     image: {
@@ -175,6 +214,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
     isNew: true,
     target: "どなたでも",
-    takes: timeEst.short,
+    takes: timeEst.s,
   },
+  */
 ];
