@@ -101,6 +101,21 @@ export const exhibitions: Exhibition[] = [
     target: "小学生以上におすすめ",
     takes: timeEst.l,
   },
+
+  {
+    title: "アイスクリームを作ろう！",
+    image: {
+      src: "img/icecream.png",
+      alt: "アイスクリームのイメージ",
+    },
+    description: `
+    アイスクリームを作りながら君のプログラミング力を試してみよう！注文通りのアイスを作れるように従業員を配置しましょう。どの人をどう組み合わせるかによって、完成するアイスは大きく変わります。全部のステージをクリアできるでしょうか!?
+			`,
+    url: "https://icecream.utcode.net/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.m,
+  },
   /*
   {
     title: "ブロックプログラミングで並び替え",
