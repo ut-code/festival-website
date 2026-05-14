@@ -44,35 +44,6 @@ export const exhibitions: Exhibition[] = [
   },
   */
   {
-    title: "はじめてのプログラミング 迷路",
-    image: {
-      src: "img/maze.png",
-      alt: "迷路のイメージ",
-    },
-    description: `
-    ut.code(); がこれまでの学園祭でも提供してきた、一番人気のコンテンツ！ブロックプログラミングを通して迷路のゴールまで到達し、プログラミングの基礎を体験してみましょう。最終的にはどのような迷路でもゴールできるアルゴリズムを作れるようになります！大人でも苦戦するかも！？
-			`,
-    url: "https://maze.utcode.net/",
-    isNew: false,
-    target: "小学生以上におすすめ",
-    takes: timeEst.m,
-  },
-  {
-    // disabled: true,
-    title: "AIとオセロ",
-    image: {
-      src: "img/othello.png",
-      alt: "オセロのイメージ",
-    },
-    description: `
-    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
-				`,
-    url: "https://boardgame.utcode.net/",
-    isNew: false,
-    target: "どなたでも",
-    takes: timeEst.s,
-  },
-  {
     title: "Space Simulator",
     image: {
       src: "img/space.png",
@@ -115,6 +86,35 @@ export const exhibitions: Exhibition[] = [
     isNew: true,
     target: "どなたでも",
     takes: timeEst.m,
+  },
+  {
+    title: "はじめてのプログラミング 迷路",
+    image: {
+      src: "img/maze.png",
+      alt: "迷路のイメージ",
+    },
+    description: `
+    ut.code(); がこれまでの学園祭でも提供してきた、一番人気のコンテンツ！ブロックプログラミングを通して迷路のゴールまで到達し、プログラミングの基礎を体験してみましょう。最終的にはどのような迷路でもゴールできるアルゴリズムを作れるようになります！大人でも苦戦するかも！？
+			`,
+    url: "https://maze.utcode.net/",
+    isNew: false,
+    target: "小学生以上におすすめ",
+    takes: timeEst.m,
+  },
+  {
+    // disabled: true,
+    title: "AIとオセロ",
+    image: {
+      src: "img/othello.png",
+      alt: "オセロのイメージ",
+    },
+    description: `
+    6 × 6マスのちょっと小さいオセロで、AIと対戦してみましょう！勝つのはちょっと難しいかも！？オセロを通じて「AIと対戦する楽しさ」や「AIがどのようなものかを理解するきっかけ」にもなります。さあ、あなたの戦略でAIを打ち負かしてみませんか？
+				`,
+    url: "https://boardgame.utcode.net/",
+    isNew: false,
+    target: "どなたでも",
+    takes: timeEst.s,
   },
   /*
   {
