@@ -4,7 +4,7 @@ type TargetAge =
   | "中高生以上におすすめ"
   | "大人向け";
 const timeEst = {
-  s: "5分程度",
+  s: "5分ほど",
   m: "15分ほど",
   l: "20〜30分",
   xl: "30分〜",
@@ -87,6 +87,22 @@ export const exhibitions: Exhibition[] = [
     target: "どなたでも",
     takes: timeEst.m,
   },
+
+  {
+    title: "音ゲー回避アクション",
+    image: {
+      src: "img/escape-action.png",
+      alt: "回避アクションのイメージ",
+    },
+    description: `
+    ダッシュで回避！爽快音ゲーです
+			`,
+    url: "https://sounddodge.onrender.com/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.s,
+  },
+
   {
     title: "はじめてのプログラミング 迷路",
     image: {
@@ -114,6 +130,21 @@ export const exhibitions: Exhibition[] = [
     url: "https://boardgame.utcode.net/",
     isNew: false,
     target: "どなたでも",
+    takes: timeEst.s,
+  },
+
+  {
+    title: "Creat CPU",
+    image: {
+      src: "img/creat-cpu.png",
+      alt: "Creat CPUのイメージ",
+    },
+    description: `
+    皆さんの持つパソコンやスマートフォンは、私たちが手で計算するよりもずっと高速に計算を行うことができます。 これは、私たちの脳に相当する CPU と呼ばれる部品が、計算を高速に行っているからです。 高速な CPU を製造するには高度な技術が必要ですが、CPU の理論的背景自体は、実はとてもシンプルです。 足し算を行う論理回路を作りながら、CPU の仕組みを学んでいきましょう。
+			`,
+    url: "https://kf74.utcode.net/create-cpu/",
+    isNew: false,
+    target: "中高生以上におすすめ",
     takes: timeEst.s,
   },
   /*
