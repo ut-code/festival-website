@@ -130,4 +130,18 @@ export const exhibitions: Exhibition[] = [
     target: "中高生以上におすすめ",
     takes: timeEst.s,
   },
+  {
+    title: "Falling Nikochan",
+    image: {
+      src: "img/nikochan_tetoris.webp",
+      alt: "Nikochanのイメージ",
+    },
+    description: `
+    PC、タブレットやスマートフォンなどのブラウザーから手軽に遊べる、シンプルでかわいいリズムゲーム (音ゲー) です。YouTube埋め込みを利用し、さまざまな人気曲で遊べます。
+        `,
+    url: "https://nikochan.utcode.net/?fes=mf99", // クエリパラメータで戻るボタンの表示が変わるようになっています
+    isNew: false,
+    target: "どなたでも",
+    takes: timeEst.s,
+  },
 ];
