@@ -132,20 +132,6 @@ export const exhibitions: Exhibition[] = [
   },
 
   {
-    title: "CreateCPU",
-    image: {
-      src: "img/createCPU.png",
-      alt: "CreateCPUのイメージ",
-    },
-    description: `
-    皆さんの持つパソコンやスマートフォンは、私たちが手で計算するよりもずっと高速に計算を行うことができます。 これは、私たちの脳に相当する CPU と呼ばれる部品が、計算を高速に行っているからです。 高速な CPU を製造するには高度な技術が必要ですが、CPU の理論的背景自体は、実はとてもシンプルです。 足し算を行う論理回路を作りながら、CPU の仕組みを学んでいきましょう。
-			`,
-    url: "/create-cpu/",
-    isNew: false,
-    target: "中高生以上におすすめ",
-    takes: timeEst.s,
-  },
-  {
     title: "Falling Nikochan",
     image: {
       src: "img/nikochan_tetoris.webp",
