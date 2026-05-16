@@ -87,6 +87,21 @@ export const exhibitions: Exhibition[] = [
   },
 
   {
+    title: "Magic Network",
+    image: {
+      src: "img/magic-network.png",
+      alt: "Magic Networkのイメージ",
+    },
+    description: `
+    コードを書いてタスクを自動化し、ネットワークを構築する体験型プログラミングゲームです。現在制作中で始めのチュートリアルのみ遊べます。プログラミングで世界を動かす感覚を味わってみましょう！
+				`,
+    url: "https://magic-network.utcode.net/",
+    isNew: true,
+    target: "大人向け",
+    takes: timeEst.l,
+  },
+
+  {
     title: "はじめてのプログラミング 迷路",
     image: {
       src: "img/maze.png",
