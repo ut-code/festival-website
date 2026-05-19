@@ -63,7 +63,6 @@ kf75 のときの例。
 (開発開始時)
 
 - Cloudflare Pages で新しい Pages を作る (kf75-website にすると分かりやすい)
-
   - Pages の設定で特筆すべき点は、
     - Production Branch -> `kf75`
     - Branch Preview (in Branch Control) -> オフにする
@@ -78,6 +77,7 @@ kf75 のときの例。
 以下は、過去の学園祭のものです。過去のものに触れる必要はありません。
 学園祭が終わり次第、その学園祭で発行したブランチにデプロイを紐づけて、下に追記してください。
 
+- <https://mf99.utcode.net>
 - <https://kf75.utcode.net/>
 - <https://mf97.utcode.net/>
 - <https://kf74.utcode.net/>
