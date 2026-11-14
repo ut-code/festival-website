@@ -25,6 +25,7 @@ type Exhibition = {
 };
 
 export const exhibitions: Exhibition[] = [
+  /*
   {
     title: "Shortcut Puzzle",
     image: {
@@ -39,6 +40,65 @@ export const exhibitions: Exhibition[] = [
     isNew: true,
     target: "どなたでも",
     takes: timeEst.med,
+  },
+  */
+  {
+    title: "Singularity",
+    image: {
+      src: "img/singularity.png",
+      alt: "AIのイメージ",
+    },
+    description: `
+    AIで人間を支配しよう
+			`,
+    url: "https://kf-team-c.ut-code.workers.dev/",
+    isNew: true,
+    target: "中高生以上におすすめ",
+    takes: timeEst.long,
+  },
+  {
+    title: "Maxinum",
+    image: {
+      src: "img/maxinum.png",
+      alt: "数字のイメージ",
+    },
+    description: `
+    計算カードを上手に配置して数字を大きくしていこう!
+			`,
+    url: "https://maxi-num.ut-code.workers.dev//",
+    isNew: true,
+    target: "中高生以上におすすめ",
+    takes: timeEst.short,
+  },
+  {
+    title: "むっちゃカメレオン",
+    image: {
+      src: "img/chameleon.png",
+      alt: "かくれんぼのイメージ",
+    },
+    description: `
+    体に上手く色を塗って、Webページに隠そう!
+    他の人たちが上手に隠したカメレオンを見つけられるかな?
+			`,
+    url: "https://chameleon.ut-code.workers.dev/#/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.short,
+  },
+  {
+    title: "まんぷくおばけ",
+    image: {
+      src: "img/goast.png",
+      alt: "おばけのイメージ",
+    },
+    description: `
+    お腹を空かせたオバケたちが家に向かってくるよ
+    おかしをあげて満足して帰ってもらおう!
+			`,
+    url: "https://manpuku-obake.ut-code.workers.dev/",
+    isNew: true,
+    target: "どなたでも",
+    takes: timeEst.short,
   },
   {
     title: "はじめてのプログラミング 迷路",
@@ -102,6 +162,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   //   target: "小学生以上におすすめ",
   //   takes: timeEst.med,
   // },
+  /*
   {
     title: "ひとり麻雀",
     image: {
@@ -118,6 +179,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     target: "中高生以上におすすめ",
     takes: timeEst.short,
   },
+  */
   // {
   //   title: "競馬AI",
   //   image: {
@@ -135,6 +197,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   //   target: "中高生以上におすすめ",
   //   takes: timeEst.med,
   // },
+  /*
   {
     title: "ハッカーになろう",
     image: {
@@ -149,6 +212,9 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     target: "大人向け",
     takes: timeEst.long,
   },
+  */
+
+  /*
   {
     title: "新歓ハッカソン作品",
     image: {
@@ -163,6 +229,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     target: "どなたでも",
     takes: timeEst.med,
   },
+  */
   {
     title: "Falling Nikochan",
     image: {

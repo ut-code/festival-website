@@ -23,10 +23,10 @@ export default function Home(): JSX.Element {
           <a href="https://gogatsusai.jp/98/visitor/project/261">
             こちらのリンク
           </a>
-          から五月祭グランプリへの投票をお願いしております。1分ほどで完了しますので、次の動画を参考に投票をお願いします！
+          から駒場祭グランプリへの投票をお願いしております。1分ほどで完了しますので、次の動画を参考に投票をお願いします！
         </p>
         <div className={styles.container}>
-          <img src="/img/mf98-vote.png" width={"500px"} height={"500px"}></img>
+          <img src="/img/kf77-vote.png" width={"500px"} height={"500px"}></img>
           <video
             src={howToVoteVideo}
             controls
