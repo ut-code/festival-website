@@ -240,7 +240,7 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
 				`,
     url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
-    isNew: true,
+    isNew: false,
     target: "どなたでも",
     takes: timeEst.short,
   },
