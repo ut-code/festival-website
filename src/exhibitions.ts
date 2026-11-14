@@ -67,7 +67,7 @@ export const exhibitions: Exhibition[] = [
 			`,
     url: "https://maxi-num.ut-code.workers.dev//",
     isNew: true,
-    target: "中高生以上におすすめ",
+    target: "小学生以上におすすめ",
     takes: timeEst.short,
   },
   {
