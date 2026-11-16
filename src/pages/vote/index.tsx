@@ -20,7 +20,7 @@ export default function Home(): JSX.Element {
       <main className="container padding-vert--lg">
         <p>
           本日は企画にお越しいただきありがとうございます。次のQRコードまたは
-          <a href="https://gogatsusai.jp/98/visitor/project/261">
+          <a href="https://www.komabasai.net/77/project/105/?utm_source=project_card&utm_medium=print&utm_campaign=kf77toujitsu">
             こちらのリンク
           </a>
           から駒場祭グランプリへの投票をお願いしております。1分ほどで完了しますので、次の動画を参考に投票をお願いします！
