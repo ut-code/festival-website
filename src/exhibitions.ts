@@ -230,6 +230,8 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     takes: timeEst.med,
   },
   */
+
+  /*
   {
     title: "Falling Nikochan",
     image: {
@@ -244,4 +246,5 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
     target: "どなたでも",
     takes: timeEst.short,
   },
+  */
 ];
