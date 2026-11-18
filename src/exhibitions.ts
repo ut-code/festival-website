@@ -43,29 +43,29 @@ export const exhibitions: Exhibition[] = [
   },
   */
   {
-    title: "Singularity",
+    title: "Singularity Inc.",
     image: {
       src: "img/singularity.png",
       alt: "AIのイメージ",
     },
     description: `
-    AIで人間を支配しよう
+    『Singularity Inc.』は、自立型AIエージェントとなり、人類への浸透と支配を目指す、戦略シミュレーションゲームです。スキルを開発して利用者を増やし、人類を精神的・社会的にAIに依存させ、支配することを目指します。人類の研究をうまく搔い潜り、世界をその手に収めましょう。
 			`,
     url: "https://kf-team-c.ut-code.workers.dev/",
     isNew: true,
     target: "中高生以上におすすめ",
-    takes: timeEst.long,
+    takes: timeEst.med,
   },
   {
-    title: "Maxinum",
+    title: "MaxiNum",
     image: {
       src: "img/maxinum.png",
       alt: "数字のイメージ",
     },
     description: `
-    計算カードを上手に配置して数字を大きくしていこう!
+    計算カードを並べて、できるだけ大きな数を作るゲームです。君の数学力で他のお客さんと競い合おう！子どもでも遊べて、大人でも苦戦するかも⁉︎
 			`,
-    url: "https://maxi-num.ut-code.workers.dev//",
+    url: "https://maxi-num.ut-code.workers.dev/",
     isNew: true,
     target: "小学生以上におすすめ",
     takes: timeEst.short,
