@@ -231,7 +231,6 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
   },
   */
 
-  /*
   {
     title: "Falling Nikochan",
     image: {
@@ -239,12 +238,11 @@ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos sint est omnis inc
       alt: "Nikochanのイメージ",
     },
     description: `
-    シンプルでかわいいリズムゲーム (音ゲー) です。 PC だけでなくタブレットやスマートフォンなどでも手軽に遊べます。さらに、アカウント登録やログイン不要で誰でも譜面を作成することができます。
-				`,
-    url: "https://nikochan.utcode.net/?fes=mf98", // クエリパラメータで戻るボタンの表示が変わるようになっています
+    PC、タブレットやスマートフォンなどのブラウザーから手軽に遊べる、シンプルでかわいいリズムゲーム (音ゲー) です。YouTube埋め込みを利用し、さまざまな人気曲で遊べます。
+        `,
+    url: "https://nikochan.utcode.net/?fes=kf77", // クエリパラメータで戻るボタンの表示が変わるようになっています
     isNew: false,
     target: "どなたでも",
     takes: timeEst.short,
   },
-  */
 ];
