@@ -129,6 +129,20 @@ export const exhibitions: Exhibition[] = [
     target: "どなたでも",
     takes: timeEst.short,
   },
+  {
+    title: "CreateCPU",
+    image: {
+      src: "img/create-CPU.png",
+      alt: "AIのイメージ",
+    },
+    description: `
+    パソコンやスマホの頭脳「CPU」は、単純な論理素子の組み合わせから出来ています。「CreateCPU」では、画面上で小さな回路を並べてつなぎ、動かしながら論理回路について学べます。パズル感覚で試行錯誤しながら、コンピュータの中身をのぞいてみませんか？
+			`,
+    url: "https://create-cpu.utcode.net/",
+    isNew: false,
+    target: "中高生以上におすすめ",
+    takes: timeEst.long,
+  },
   /*
   {
     title: "ブロックプログラミングで並び替え",
